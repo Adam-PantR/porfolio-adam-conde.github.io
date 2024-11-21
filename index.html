@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/style.css" rel="stylesheet"/>
+    <meta name="description" content="Bienvenue sur le site d'Adam Conde. Découvrez mes projets, services et coordonnées. N'hésitez pas à me contacter pour plus d'informations.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link href="https://fonts.cdnfonts.com/css/gallery" rel="stylesheet">
+    <title>Adam Conde</title>
+</head>
+<body>
+    <div class="modalConstructor">
+    </div>
+    <div class="overlay"></div>
+    <div class="modal">
+        <i class="fa-solid fa-xmark modal-close" onclick="closeModal()"></i>
+        <div class="modal-container">
+            <div class="modal-creation">
+
+            </div>
+            <button class="modal-button" onclick="closeModal()">Fermer</button> 
+        </div>
+    </div>
+    <header class="header">
+        <img src="assets/image/logo.webp" class="logo" alt="Logo Adam Conde"></img>
+        <div class="header-content">
+            <a href="#projects">Mes Projets</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>  
+            <a href="tel:0601427441" aria-label="Appeler Adam Conde au 0601427441"><i class="fa-solid fa-phone header-icon"></i></a>
+            <a href="mailto:conde.adam@yahoo.com" aria-label="Envoyer un e-mail à Adam Conde"><i class="fa-solid fa-envelope header-icon"></i></a>
+        </div>
+    </header>
+    <header class="display-mobile headerMobile">
+        <div>
+            <img src="assets/image/logo.webp" class="logo" alt="Logo Adam Conde"></img>
+            <i class="fa-solid fa-bars menu-icon" id="burger-menu"></i>
+            <i class="fa-solid fa-xmark menu-icon" id="x-mark"></i>
+        </div>      
+        <div class="header-content" id="header-mobile-toggle">
+            <a href="#projects">Mes Projets</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>  
+            <a href="tel:0601427441" aria-label="Appeler Adam Conde au 0601427441"><i class="fa-solid fa-phone header-icon"></i></a>
+            <a href="mailto:conde.adam@yahoo.com" aria-label="Envoyer un e-mail à Adam Conde"><i class="fa-solid fa-envelope header-icon"></i></a>
+        </div>
+    </header>
+    <banner id="carrousel">
+        <div id="carrousel-container" class="slider">
+        </div>
+        <div class="dots">
+			<div class="dot dot-selected"></div>
+			<div class="dot"></div>
+			<div class="dot"></div>
+		</div>
+        <i class="fa-solid fa-arrow-left" class="button" id="left"></i>
+        <i class="fa-solid fa-arrow-right" class="button" id="right"></i>
+    </banner>
+    <div class="mon-portfolio">
+        <h1>Mon portfolio</h1>
+        <p>Savoir coder et créer des éléments design c'est utile et efficace. Mais les comprendre et les utiliser de tous leurs sens est encore mieux.</p>
+    </div>
+    
+    <section>
+        <article class="article-me-concernant" id="services">
+            
+            <div class="div-me-concernant">
+                <div class="div-image-me-concernant">
+                    <img class="image-me-concernant" src="assets/image/Photo-Adam-Conde.jpg" alt="Photo de profil">   
+                </div>
+                <div class="phrase-me-concernant div-milieu-me-concernant">
+                    <h2>Web Designer</h2>
+                    <p>Force de proposition tout en étant à l'écoute de mon client, je saurais répondre à vos attentes. Mon rôle est de créer un site design et unique, un site qui vous ressemble.</p>
+                    <p>A l'aise avec la suite Adobe Creative Cloud, je réaliserai aisément vos maquettes et par la suite les transformerai en site fonctionnel. </p>
+                    <p>Votre site n'attend que vous !</p>
+                    <div class="phrase-me-concernant div-logicielsTablette">
+                        <h2>Mes logiciels et CMS</h2>
+                        <div class="div-image-logiciels">
+                            <div>
+                                <h3><img src="assets/logos/photoshop.png" class="image-logiciels" alt="Logo Photoshop"> Photoshop </h3>
+                                <h3><img src="assets/logos/illustrator.png" class="image-logiciels" alt="Logo Illustrator"> Illustrator</h3>
+                                <h3><img src="assets/logos/premierepro.png" class="image-logiciels" alt="Logo Premiere Pro"> Première Pro</h3>
+                            </div>
+                            <div>
+                                <h3><img src="assets/logos/prestashop.png" class="image-logiciels" alt="Logo Prestashop"> Prestashop</h3>
+                                <h3><img src="assets/logos/wordpress.png" class="image-logiciels" alt="Logo WordPress"> Wordpress</h3>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+                <div class="phrase-me-concernant div-logiciels">
+                    <h2>Mes logiciels et CMS</h2>
+                    <div class="div-image-logiciels">
+                        <h3><img src="assets/logos/photoshop.png" class="image-logiciels" alt="Logo Photoshop"> Photoshop </h3>
+                        <h3><img src="assets/logos/illustrator.png" class="image-logiciels" alt="Logo Illustrator"> Illustrator</h3>
+                        <h3><img src="assets/logos/premierepro.png" class="image-logiciels" alt="Logo Premiere Pro"> Première Pro</h3>
+                        <h3><img src="assets/logos/prestashop.png" class="image-logiciels" alt="Logo Prestashop"> Prestashop</h3>
+                        <h3><img src="assets/logos/wordpress.png" class="image-logiciels" alt="Logo WordPress"> Wordpress</h3>
+                    </div>      
+                </div>
+            </div>
+        </article>
+        <article class="article-projets">
+            <h2 id="projects"><i class="fa-solid fa-arrow-left" id="Arrow-Projet-Gauche"></i>Mes projets<i class="fa-solid fa-arrow-right" id="Arrow-Projet-Droite"></i></h2>
+            <div class="container-projets" id='projets' data-mouse-down-at="0" data-prev-percentage="0">
+                <div class="div-projets" draggable="false">
+                    <div onclick="openModalProjet(1)">
+                        <a class="open-modal1"><img src="assets/image/booki.webp" class="projet-image" alt="Image du site Booki"></a>
+                    </div>
+                    <h3>Booki</h3>
+                    <p>Le projet de booki consiste à créer une page de deventure d'un site de logement se situant à Marseille. Dans ce projet, il m'était demandé d'utiliser uniquement du HTML / CSS et d'utiliser les flex-box afin de disposer les éléments comme figurés dans la maquette.</p>
+                    <div class="visualisation">
+                        <a href="https://github.com/Adam-PantR/projet-3" class="download-button">Lien GitHub<i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="div-projets" draggable="false">
+                    <div onclick="openModalProjet(2)">
+                        <a class="open-modal1" ><img src="assets/image/sophie-bluel.webp" class="projet-image" alt="Image du site Sophie Bluel"></a>
+                    </div>
+                    <h3>Sophie Bluel</h3>
+                    <p>Le projet de Sohpie Bluel était destiné à la prise en main de la communication entre le Front-End et le Back-End. Le travail reposait essentiellement sur du Java Script et de la fonction fetch.</p>
+                    <div class="visualisation">
+                        <a href="https://github.com/Adam-PantR/p6-portfolio-sophie" target="_blank" class="download-button">Lien GitHub <i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="div-projets" draggable="false">
+                    <div onclick="openModalProjet(3)">
+                        <a><img src="assets/image/react.webp" width="150%" class="projet-image" alt="Image du site React"></a>
+                    </div>
+                    <h3>React</h3>
+                    <p>Le projet React consistait à créer un site d'agence de logement uniquement à l'aide de React. Chacun des éléments créés devait être recyclable et réutilisable dans le futur de sorte à ajouter ou supprimer des éléments plus facilement.</p>
+                    <div class="visualisation">
+                        <a href="https://github.com/Adam-PantR/Open-Classroom-Protjet-8-" target="_blank" class="download-button">Lien GitHub<i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="div-projets" draggable="false">
+                    <div onclick="openModalProjet(4)">
+                        <a><img src="assets/image/nina-carducci.webp" class="projet-image" alt="Image du site Nina Carducci"></a>
+                    </div>
+                    <h3>Nina Carducci</h3>
+                    <p>Ce projet met en avant le côté SEO et perfomance du site. Le principe de ce projet était d'améliorer les caractéristiques LightHouse et de générer un référencement suffisant au site de Nina Carducci</p>
+                    <div class="visualisation">
+                        <a href="https://github.com/Adam-PantR/OpenClassroom-Projet-9" target="_blank" class="download-button">Lien GitHub<i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="div-projets" draggable="false">
+                    <div onclick="openModalProjet(5)">
+                        <a><img src="assets/image/print-it.webp" class="projet-image" alt="Image du site Print it"></a>
+                    </div>
+                    <h3>Print-it !</h3>
+                    <p>Le projet Print-it était déstiné à ma première création de carrousel. Il s'agit de mes premiers pas en Java Script ainsi que la découverte du fonctionnement des algorithmes.</p>
+                    <div class="visualisation">
+                        <a href="https://github.com/Adam-PantR/adam-pantr.github.io" target="_blank" class="download-button">Lien GitHub<i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="div-projets" draggable="false">
+                    <div onclick="openModalProjet(6)">
+                        <a><img src="assets/image/steam.webp" class="projet-image" alt="Image du projet Steam"></a>
+                    </div>
+                    <h3>Steam</h3>
+                    <p>Dans ce projet j'avais pour mission de recréer une storyboard ainsi qu'une maquette d'un projet visant à créer une application de la marque Steam.</p>
+                    <div class="visualisation">
+                        <a href="assets/Steam Travail en Groupe.pdf" target='_blank' class="download-button">Visualisation <i class="fa-solid fa-eye"></i></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="footer-coordonnees">
+            <h2>Mes coordonées</h2>
+                <p><a href="mailto:conde.adam@yahoo.com"><i class="fa-solid fa-envelope"></i> </a> conde.adam@yahoo.com</p>
+                <p><a href="tel:0601427441"><i class="fa-solid fa-phone"></i> </a> 06 01 42 74 41</p>
+        </div>
+        <div class="footer-formulaire-h3">
+            <h3>Une question ? Besoin de plus de renseignement ? <span>N'hésitez pas à me contacter</span></h3>
+            <img class="footer-formulaire-h3-image" src="./assets/image/image2.webp" alt="Image design">
+        </div>            
+    </footer>
+    <script src="assets/script.js"></script>
+    <script src="assets/modalEvent.js"></script>
+</body>
+</html>
